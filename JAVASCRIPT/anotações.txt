@@ -1,0 +1,179 @@
+Curso JS - Gustavo Guanabara
+
+Comentários em JS------------------------------------
+
+// unica linha ;
+/* lorem lorem */ ;
+
+Variáveis-------------------------------------
+
+' = '   ->   significa recebe;
+null -> nula, nada;
+
+var n2 = 5;
+var n3 = "Bla bla"
+var n4 = 'Blo blo'
+var n5 = ´Ble Ble´
+
+n1 é um identificador, -------------------------------
+regras para identificadores:
+
+pode começar com letra,$ ou _ ;
+não pode começar com numeros;
+pde usar letra e numero;
+pode usar acento e simbolos;
+não pode ter espaço;
+não pode ser palavra reservada (que ja usa no javascript);
+
+maiusculas e minusculas fazem diferença;
+escolha numeros coerentes;
+
+Tipos de Variáveis:-----------------------------------
+
+Number;
+String;
+Boolean;
+typeof - mostra o tipo;
+
+Manipulação de dados--------------------------------
+
+var nome = window.prompt('Qual seu nome?')
+salva o nome escrito na variável;
+
+window.alert('É um grande prazer te conhecer,'+ nome)
+concatenou usando o mais
+
+o mais serve pra soma e concatenação, se usar o window prompt ele recebe a string;
+
+number.parseint ou float - converter para número;
+number() - o proprio js decide se é float ou int;
+
+String(s) - converter pra string;
+
+Forma de usar a variavel sem +: `O alundo ${nome} tirou %{nota}`
+
+Quando usar cada string:----------------------------
+
+`Eu estou adasd ${s}` - usar template string
+'Eu estou adasd',+ s - concatenar
+
+Comandos de string e um de number:--------------------
+
+s.length - quantos caracteres
+s.toUpperCase() - Tudo maiusculo;
+s.toLowerCase() - Tudo minusculo;
+document.write() - escreve no html;
+
+n1.toFixed(2) - transforma o numero em 2 casas;
+n1.toLocaleString('pt-BR',{style: 'currency',currency: 'BRL(ou outra moeda)'}) - transforma em real;
+
+Operadores do javascript: -------------------
+
+Arítmeticos: 
+
++  mais
+-  menos
+*  multiplicação
+/  divisão
+%  resto da divisão
+** elevado
+
+Auto Atribuição:
+
+n=n+4 => n+=4
+n=n-5 => n-=5
+n=n*4 => n*=4
+n++
+n--    
+
+Relacionais:
+> maior
+< menor
+>= maior ou igual
+== igual
+!= diferente
+=== estritamente igual
+5 == 5 true
+5 == '5' true
+5 === '5' false
+Respostas serão true e false;
+
+Lógicos:
+! não - negação
+&& e - conjunção
+|| ou - disjunção
+
+precedencia ->>> () -> ** -> / -> > -> < -> >= -> ! -> && ->||
+
+Ternarios: 
+
+teste?true:false
+
+media >= 7.0?'Aprovado':'Reprovado';
+
+DOM: -----------------------------------------
+
+DOCUMENT OBJECT MODEL
+
+Conjunto de objetos que funciona dentro do navegador dando acesso aos componentes do site;
+
+Arvore DOM: 
+              window
+                 |
+    location document history
+                 |
+               html
+               /  \
+           head    body
+
+window.document.write(escreve no body);
+
+Como selecionar por marca:
+//pode omitir o document, mas nao tem necessidade
+getElementsByTagName()
+window.document.write('Escrevendo com js ' + p1.innerText) - pega o texto sem as filhas
+window.document.write('Escrevendo com js ' + p1.innerHTML) - pega filhas
+
+Por ID:
+getElementsById()
+var d = window.document.getElementById('msg') 
+        window.document.write('Escrevendo com js ' + p1.innerHTML)
+Por nome:
+getElementsByName()
+name = 'cleito'
+getElementsByName('cleito)
+
+Por Classe:
+getElementsByClassName()
+
+Por Seletor:
+querySelector('div.msg') para Classe
+querySelector('div#msg') para ID
+
+Eventos DOM:
+
+mouseenter/mousemove/mouseup...
+procurar dom event list no google
+
+Variaveis compostas ----------------------
+Vetor
+
+let num = [0,1,2]
+num[3] = 6
+num = [0,1,2,6]
+num.push(7)
+num = [0,1,2,6,7]
+num.length = 5-> tamanho, sem ()
+num.sort() - ordem crescente
+
+jeito facil de usar for:
+
+for(let pos in num){
+        console.log(num[pos])
+}
+
+Buscar valores:
+num=[4,5,6,7,8]
+retorna posição
+num.indexOf(7) = 3
+num.indexOf(3) = -1 (não tem)

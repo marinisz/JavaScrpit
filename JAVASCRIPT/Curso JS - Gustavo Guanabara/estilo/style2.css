@@ -1,0 +1,45 @@
+body{
+    background-color: lightblue;
+}
+*{
+    box-sizing: border-box;
+    font: normal 15pt Arial;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+section{
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+    align-content: center;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.479);
+    width: 500px;
+
+}
+footer{
+    text-align: center;
+    color: white;
+    
+}
+div{
+    background: white;
+    border-radius: 10%;
+    margin: 10px;
+    align-content: center;
+}
+div#res img{
+    max-width:200px;
+    border-radius: 10%;
+}
+input.dessa{
+    max-width: 50px;
+}
+select#lista{
+    width: 220px;
+}
+input#fnum{
+    width: 50px;
+}

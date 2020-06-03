@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    font: normal 15pt Arial;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+section{
+    background: white;
+    border-radius: 10%;
+    margin: auto;
+    align-content: center;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.479);
+    max-width: 400px;
+
+}
+footer{
+    text-align: center;
+    color: white;
+    
+}
+div{
+    background: white;
+    border-radius: 10%;
+    margin: 10px;
+    align-content: center;
+    text-align: center;
+}
+div#foto img{
+    max-width:200px;
+    border-radius: 10%;
+}

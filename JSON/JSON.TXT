@@ -1,0 +1,59 @@
+JSON
+
+JavaScript Object Notation
+Representação de data;
+Muito usada;
+Bem leve e fácil de ler;
+Se integra com a maioria das linguagen;
+
+Tipos:
+Strngs/Numbers/Booleans/null/Arrays/Object;
+
+Como fazer:
+user.json (nome do file);
+Coloque o que quiser dos tipos, e isso é um JSON;
+
+user.json
+
+{
+
+ "key": "value",
+ "name": "nico", String
+ "favoriteNumber": 3, Number
+ "IsProgrammer": true, Boolean
+ "hobbies": ["Weight Lifting","Bowlin"], Array
+ "friends":[{
+    "name": "nico",
+    "favoriteNumber": 3, 
+    "IsProgrammer": true 
+ }] muitos formatos em um;
+
+}
+
+Exemplo: 
+companies.json
+[
+{
+    "name": "Big Corporation",
+    "NumberOfEmployess": 10000,
+    "ceo": Mary,
+    "rating": 3.6
+},
+{
+    "name": "Small Corporation",
+    "NumberOfEmployess": 10,
+    "ceo": null,
+    "rating": 5.0
+}
+]
+
+Basta printar isso como variavel no script na html, e pronto.
+<script>
+var companies = todo conteudo
+</script>
+console.log(companies) (aparece tudo);
+
+Se colocar os dados em `` (acento){
+    use console.log(JSON.parse(companies)) então essa string vira um objeto de javascript;
+    pode usar (JSON.parse(companies)[0].name) - retorna o name do primeiro objeto.
+}

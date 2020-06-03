@@ -1,0 +1,44 @@
+CURSO DE NODE JS ----------------------
+O que é?
+Interpretador JavaScript que não depende do navegador.
+Te possibilita criar aplicações back-end com o JavaScript; Ele revolucionou o mundo JavaScript;
+Bases do node: V8 (entende o JS) + Libuv(biblioteca que deu cara de backend para o JavaScript);
+
+Vantagens:----------------------
+Leve;
+Aproveita melhor a CPU;
+Tem um dos maiores ecossistemas de bibliotecas,módulos e plug-ins;
+
+Quem usa?----------------------
+Ebay;
+Netflix;
+Uber;
+Paypal;
+Microsoft;
+
+Para baixar: https://nodejs.org/en/----------------------
+
+Primeiros passos: ----------------------
+Abra o cmd ou terminal se tiver mac;
+Digite node -v, se retornar a versão do node então está funcionando!
+
+Módulos: ----------------------
+Dividir seu programa em partes;
+Você busca uma função em outra pasta.
+Para disponibilizar a função voce deve exporta-la:
+module.exports= nome da função;
+Para busca-la:
+require("./nome da função")
+
+Protocolo HTTP: ----------------------
+Comunicação entre cliente e servidor;
+var http = require('http');
+
+http.createServer(function(req,res){
+    res.end("Olá");
+}).listen(8081)
+
+console.log("O servidor esta rodando!")
+
+Express-----------------
+É um Framework -  

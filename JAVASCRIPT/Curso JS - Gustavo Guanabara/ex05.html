@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background: rgb(127, 127, 202);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos em dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p class="baby">Aprendendo usar JS</p>
+    <div id="msg">Clique aqui</div>
+    <script> 
+        var p1 = window.document.getElementsByTagName('p')[0]//primeiro p
+        var d = window.document.getElementById('msg') 
+        window.document.write('Escrevendo com js ' + p1.innerHTML)
+        var c = document.querySelector('p.baby');
+        c.style.background = 'red'
+        d.style.background = 'green'
+        p1.style.color='red'
+    </script>
+</body>
+</html>
