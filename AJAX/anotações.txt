@@ -1,3 +1,5 @@
+Referência: https://www.youtube.com/watch?v=vAts0_Li_7E&t=1s // https://www.youtube.com/watch?v=MX8v1J2Dxdw
+
 AJAX - Asynchronous JavaSript and XML
 
 Melhora a experiência do usuário;
