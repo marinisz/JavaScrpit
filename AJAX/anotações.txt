@@ -1,1 +1,49 @@
 AJAX - Asynchronous JavaSript and XML
+
+Melhora a experiência do usuário;
+Você faz requisições sem ter que recarregar a página;
+------------------------------------------------------
+
+
+Estados de prontidão de requisições:
+0 - não iniciado
+1 - conexão com servidor foi estabeleida
+2 - pedido reccebido
+3 - em processamento
+4 - pronto
+
+------------------------------------------------------
+exemplo de requisição simples: 
+
+
+function ajax() {
+    var xmlHttp;
+    if (window.XMLHttpRequest) {
+        xmlHttp = new XMLHttpRequest;
+    } else {
+        xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    var tela = document.querySelector('div#tela');
+    xmlHttp.onreadystatechange = function () {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            console.log(xmlHttp.responseText);
+        }
+        
+        texto = xmlHttp.responseText
+        tela.innerHTML = `${texto}` 
+    }
+       
+    xmlHttp.open('GET', 'arquivo.txt', true);
+    xmlHttp.send();
+
+}
+
+Ao clicar no botão o texto se transforma em Olá Ajax;
+------------------------------------------------------
+estados de prontidão de requisições:
+0 - não iniciado
+1 - conexão com servidor foi estabeleida
+2 - pedido reccebido
+3 - em processamento
+4 - pronto
+------------------------------------------------------
