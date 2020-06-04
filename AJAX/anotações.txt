@@ -49,3 +49,4 @@ estados de prontidão de requisições:
 3 - em processamento
 4 - pronto
 ------------------------------------------------------
+
